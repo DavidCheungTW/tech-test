@@ -1,0 +1,22 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.results img {
+  aspect-ratio: 1 / 1;
+  width: 200px;
+  padding: 10px;
+  transition: 1s;
+}
+
+.results img:hover {
+  background-color: lightsalmon;
+}
+
+@media all and (max-width: 600px) {
+  .results img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
+}
