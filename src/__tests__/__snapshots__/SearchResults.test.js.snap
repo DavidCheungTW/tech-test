@@ -1,21 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchResults Renders as expected 1`] = `
-<p>
+<p
+  className="results"
+>
   <img
-    height="150"
-    src="image-href1"
-    width="150"
+    className="image"
   />
   <img
-    height="150"
-    src="image-href2"
-    width="150"
+    className="image"
   />
   <img
-    height="150"
-    src="image-href3"
-    width="150"
+    className="image"
   />
 </p>
 `;

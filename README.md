@@ -8,34 +8,52 @@
 - during build components, build jest files to test each components
 - make spy test for axios method
 
-## 2 x screenshots of how our app looks on desktop and mobile
+## Screenshots of app
+
+- desktop screen to show all images
 
 <img src="screen\screen-desktop.png" height="200">
 
+- desktop screen clicking one image
+
+<img src="screen\screen-desktop-zoom.png" height="200">
+
+- mobile screen to show images
+
 <img src="screen\screen-mobile.png" height="200">
 
-## What the app was built with (React)
+## App built with (React)
+
+- simple app to have a single text box input
+- using the input to search and get images from NASA api
+- showing all retrieved images to screen
 
 ## Testing utilities used (Jest, React Testing Library)
 
-- fireEvent, render, screen, waitFor from "@testing-library/react"
-- axios from "axios"
-- renderer from "react-test-renderer"
+- render, screen from "@testing-library/react": methods to get screen by component.
+- renderer from "react-test-renderer": method to generate snapshot for comparison next time.
+- fireEvent from "@testing-library/react": simulate event trigger on component.
+- waitFor from "@testing-library/react": await for a group of actions
+- axios from "axios": apply spyOn test for axios api
 
-## Packages used
+## Package used
 
-- (Axios etc)
+- Axios API: promise-based HTTP Client for node.js and the browser.
+  [Link](https://axios-http.com/docs/intro)
 
-## Instructions on how to run the app once the user has cloned the repo
+## Instructions to run the app
 
-- git clone <github>
-- cd .....
+- git clone https://github.com/DavidCheungTW/tech-test.git
+- cd tech-test
 - npm install
-- npm start (use to test web page)
-- npm test (use to jest)
+- npm start (use to test app)
+- npm test (a: test all; q: quit test)
 
-## Things you would add to the app if you had more time
+## Extra functions
 
--
+- show description when mouse put on that image.
+- clicking image can popup larger picture and title.
 
-## The author's name (you)
+## Author
+
+David Cheung
