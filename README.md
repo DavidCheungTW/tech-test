@@ -12,15 +12,15 @@
 
 - desktop screen to show all images
 
-<img src="screen\screen-desktop.png" height="200">
+- <img src="screen\screen-desktop.png" height="200">
 
 - desktop screen clicking one image
 
-<img src="screen\screen-desktop-zoom.png" height="200">
+- <img src="screen\screen-desktop-zoom.png" height="200">
 
 - mobile screen to show images
 
-<img src="screen\screen-mobile.png" height="200">
+- <img src="screen\screen-mobile.png" height="200">
 
 ## App built with (React)
 
@@ -30,11 +30,13 @@
 
 ## Testing utilities used (Jest, React Testing Library)
 
-- render, screen from "@testing-library/react": methods to get screen by component.
-- renderer from "react-test-renderer": method to generate snapshot for comparison next time.
-- fireEvent from "@testing-library/react": simulate event trigger on component.
-- waitFor from "@testing-library/react": await for a group of actions
-- axios from "axios": apply spyOn test for axios api
+| Utilities      | From                     | Usage                                         |
+| -------------- | ------------------------ | --------------------------------------------- |
+| render, screen | "@testing-library/react" | to get screen by component                    |
+| renderer       | "react-test-renderer"    | to generate snapshot for comparison next time |
+| fireEvent      | "@testing-library/react" | to simulate event trigger on component        |
+| waitFor        | "@testing-library/react" | await for a group of actions                  |
+| axios          | "axios"                  | to apply spyOn test for axios api             |
 
 ## Package used
 
@@ -53,6 +55,7 @@
 
 - show description when mouse put on that image.
 - clicking image can popup larger picture and title.
+- add mobile screen handle.
 
 ## Author
 

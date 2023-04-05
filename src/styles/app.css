@@ -1,10 +1,18 @@
 .app {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/52688121607_bcce2a690e_o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  padding: 20px;
 }
 
 .nasa-logo {
   margin: auto;
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
