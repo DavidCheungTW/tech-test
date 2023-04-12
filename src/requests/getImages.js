@@ -21,7 +21,9 @@ const getImages = (query) => {
       })
       .catch((err) => {
         console.log(err);
+        return Promise.reject([]);
       });
   }
 };
+
 export default getImages;

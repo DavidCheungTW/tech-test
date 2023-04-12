@@ -1,62 +1,78 @@
-# Get space images from NASA
+# Technical Test App
 
-## The purpose of Technical test
+## Project Brief
 
-- build React App with text input box and submit button
-- build function to search space images from NASA api with ax ios
-- render received images
-- during build components, build jest files to test each components
-- make spy test for axios method
+This application uses to search images for stars, planets or galaxy entered by a user. Then application need to fetch images from NASA external API.
+
+When image is found, application needs to show images. And user can click image which one like, an enlarged image will be shown.
+
+If no image is found, error message will be shown.
+
+Besides, application needs to have a full test suite for each components including asynchronous components.
 
 ## Screenshots of app
 
 - desktop screen to show all images
 
-- <img src="screen\screen-desktop.png" height="200">
+  <img src="screen\screen-desktop.jpeg" height="200">
 
 - desktop screen clicking one image
 
-- <img src="screen\screen-desktop-zoom.png" height="200">
+  <img src="screen\screen-desktop-zoom.jpeg" height="200">
 
 - mobile screen to show images
 
-- <img src="screen\screen-mobile.png" height="200">
-
-## App built with (React)
-
-- simple app to have a single text box input
-- using the input to search and get images from NASA api
-- showing all retrieved images to screen
+  <img src="screen\screen-mobile.jpeg" height="200">
 
 ## Testing utilities used (Jest, React Testing Library)
 
-| Utilities      | From                     | Usage                                         |
-| -------------- | ------------------------ | --------------------------------------------- |
-| render, screen | "@testing-library/react" | to get screen by component                    |
-| renderer       | "react-test-renderer"    | to generate snapshot for comparison next time |
-| fireEvent      | "@testing-library/react" | to simulate event trigger on component        |
-| waitFor        | "@testing-library/react" | await for a group of actions                  |
-| axios          | "axios"                  | to apply spyOn test for axios api             |
+| Utilities | From                     | Usage                                                          |
+| --------- | ------------------------ | -------------------------------------------------------------- |
+| renderer  | "react-test-renderer"    | to generate component snapshots to catch unanticipated changes |
+| render    | "@testing-library/react" | to create the virtual test environment                         |
+| fireEvent | "@testing-library/react" | to simulate event trigger on component                         |
+| waitFor   | "@testing-library/react" | await for a group of actions                                   |
+| spyOn     | "jest"                   | to mock response from axios API calls                          |
 
-## Package used
+## Technologies
 
-- Axios API: promise-based HTTP Client for node.js and the browser.
-  [Link](https://axios-http.com/docs/intro)
+- [React](https://react.dev/learn): create a React app project template
+- [Axios API](https://axios-http.com/docs/intro): promise-based HTTP Client for node.js and the browser
+- [Prop types](https://www.npmjs.com/package/prop-types): runtime type checking for React props and similar objects
 
-## Instructions to run the app
+## Instructions
 
-- git clone https://github.com/DavidCheungTW/tech-test.git
-- cd tech-test
-- npm install
-- npm start (use to test app)
-- npm test (a: test all; q: quit test)
+- Clone the repo:
 
-## Extra functions
+```
+git clone https://github.com/DavidCheungTW/tech-test.git
+```
 
-- show description when mouse put on that image.
-- clicking image can popup larger picture and title.
-- add mobile screen handle.
+- Move into the directory and install:
+
+```
+cd tech-test
+npm install
+```
+
+- To start and run on port 3000:
+
+```
+npm start
+```
+
+- To run the tests:
+
+```
+npm test
+```
+
+## Extra features
+
+- show description when mouse put on that image
+- clicking image can popup larger picture with title
+- add mobile screen handle
 
 ## Author
 
-David Cheung
+[David Cheung](https://www.linkedin.com/in/david-cheung-473597199/)

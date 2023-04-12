@@ -1,22 +1,28 @@
 .results {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results h3 {
+  color: white;
 }
 
 .results img {
   aspect-ratio: 1 / 1;
   width: 200px;
-  padding: 20px;
+  margin: 20px;
   transition: 1s;
 }
 
 .results img:hover {
-  background-color: lightsalmon;
+  box-shadow: 10px 10px 5px lightgrey;
+  cursor: pointer;
 }
 
 @media all and (max-width: 600px) {
   .results img {
     aspect-ratio: 1 / 1;
-    width: 100%;
+    width: 90%;
   }
 }

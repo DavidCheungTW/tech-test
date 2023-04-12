@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import "../styles/search.css";
+import PropTypes from "prop-types";
 import getImages from "../requests/getImages.js";
+import "../styles/search.css";
 
-const Search = ({ setSearchResults }) => {
+const Search = ({ setSearchResults, setSlideOn }) => {
   const [value, setValue] = useState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setSlideOn(false);
     setSearchResults(await getImages(value));
   };
 
@@ -27,3 +29,8 @@ const Search = ({ setSearchResults }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  setSearchResults: PropTypes.func.isRequired,
+  setSlideOn: PropTypes.func.isRequired,
+};

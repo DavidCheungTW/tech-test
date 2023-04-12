@@ -1,7 +1,8 @@
+import React from "react";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import App from "../components/App";
 import renderer from "react-test-renderer";
 import axios from "axios";
+import App from "../components/App";
 
 describe("App", () => {
   beforeEach(() => {
@@ -20,7 +21,7 @@ describe("App", () => {
     expect(screen.getByRole("img")).toHaveClass("nasa-logo");
   });
 
-  test("renders learn react link with spy axios", async () => {
+  test("Renders images once data has been fetched from API", async () => {
     const mAxiosResponse = {
       data: {
         collection: {
@@ -43,7 +44,6 @@ describe("App", () => {
     };
     jest.spyOn(axios, "get").mockResolvedValue(mAxiosResponse);
     render(<App />);
-
     const textBox = screen.getByRole("textbox");
     const searchButton = screen.getByRole("button");
     fireEvent.change(textBox, { target: { value: "moon" } });

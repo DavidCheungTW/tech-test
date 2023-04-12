@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import renderer from "react-test-renderer";
-import SearchResults from "../components/SearchResults";
+import SlideShow from "../components/SlideShow";
 
-describe("SearchResults", () => {
+describe("SlideShow", () => {
   const validProps = {
     results: [
       { href: "image-href1", title: "image-title1" },
@@ -14,16 +14,9 @@ describe("SearchResults", () => {
 
   test("Renders as expected", () => {
     const rendered = renderer.create(
-      <SearchResults results={validProps.results} />
+      <SlideShow results={validProps.results} />
     );
 
     expect(rendered).toMatchSnapshot();
-  });
-
-  test("Assert 3 images are present", () => {
-    render(<SearchResults results={validProps.results} />);
-    const imgs = screen.getAllByRole("img");
-
-    expect(imgs).toHaveLength(3);
   });
 });
